@@ -3,6 +3,13 @@ using System.Management.Automation;
 
 namespace TestCmdlet1
 {
+    /// <summary>
+    /// <para type="synopsis">Simple Hello World example.</para>
+    /// <example>
+    ///     <para>PS></para>
+    ///     <code>Test-PowerShell1 -Name World</code>
+    /// </example>
+    /// </summary>
     [Cmdlet(VerbsDiagnostic.Test, "PowerShell1")]
     [OutputType(typeof(string))]
     public class TestPowerShell1Cmdlet : Cmdlet
@@ -16,6 +23,9 @@ namespace TestCmdlet1
         }
         */
 
+        /// <summary>
+        /// <para type="description">Name to say 'Hello' to.</para>
+        /// </summary>
         [Parameter(Mandatory = true)]
         public string Name { get; set; }
 
