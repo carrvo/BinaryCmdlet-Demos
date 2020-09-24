@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="UsingCmdletDirectly.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsingCmdletIndirectly.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="xunit">
