@@ -6,10 +6,10 @@ using System.Linq;
 
 namespace XUnitTest
 {
-    public sealed class UnitTest1
+    public sealed class UsingCmdletDirectly
     {
         [Fact]
-        public void Output()
+        public void WhenHappyPathShouldOutput()
         {
             var cmdlet = new TestCmdlet1.TestPowerShell1Cmdlet
             {
