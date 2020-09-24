@@ -18,7 +18,7 @@ namespace XUnitTest
             {
                 Name = "me"
             };
-            string output = cmdlet.Invoke<string>().First<string>();
+            string output = cmdlet.Invoke<string>().FirstOrDefault<string>();
             Assert.Equal("Hello me", output);
         }
 
@@ -35,7 +35,7 @@ namespace XUnitTest
             {
                 Name = ""
             };
-            string output = cmdlet.Invoke<string>().First<string>();
+            string output = cmdlet.Invoke<string>().FirstOrDefault<string>();
             Assert.Equal("Hello ", output);
         }
     }
