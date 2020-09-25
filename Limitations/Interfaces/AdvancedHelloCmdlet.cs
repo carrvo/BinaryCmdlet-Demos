@@ -10,10 +10,9 @@ namespace Interfaces
     /// <summary>
     /// <para type="synopsis">Determine whether inherited properties from an Interface are acceptable to PowerShell.</para>
     /// </summary>
-    [Cmdlet(VerbsCommon.Get, "Hello", RemotingCapability = RemotingCapability.None)]
-    public sealed class HelloCmdlet : Cmdlet, IHello
+    [Cmdlet(VerbsCommon.Get, "AdvancedHello", RemotingCapability = RemotingCapability.None)]
+    public sealed class AdvancedHelloCmdlet : Cmdlet, IAdvancedHello
     {
-        [Parameter(Mandatory = true, Position = 0, ValueFromPipeline = true)]
         public String Name { get; set; }
 
         protected override void ProcessRecord()

@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvancedHelloCmdlet.cs" />
     <Compile Include="HelloCmdlet.cs" />
+    <Compile Include="IAdvancedHello.cs" />
     <Compile Include="IHello.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
