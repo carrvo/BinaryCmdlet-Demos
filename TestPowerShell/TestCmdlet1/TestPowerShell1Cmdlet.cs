@@ -12,10 +12,14 @@ namespace TestCmdlet1
     /// </summary>
     [Cmdlet(VerbsDiagnostic.Test, "PowerShell1")]
     [OutputType(typeof(string))]
-    public class TestPowerShell1Cmdlet : Cmdlet
+    public sealed class TestPowerShell1Cmdlet : Cmdlet
     {
         /*
-        static void Main(string[] args)
+        /// <summary>
+        /// This is what a Console Application would normally look like.
+        /// <param name="args">Command line arguments.</param>
+        /// </summary>
+        public static void Main(string[] args)
         {
             if (args.Length != 1)
                 exit("must have exactly one input!");

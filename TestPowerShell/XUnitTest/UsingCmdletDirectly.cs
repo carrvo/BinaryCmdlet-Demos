@@ -6,6 +6,9 @@ using System.Linq;
 
 namespace XUnitTest
 {
+    /// <summary>
+    /// Examples with direct, native use of cmdlets.
+    /// </summary>
     public sealed class UsingCmdletDirectly
     {
         /// <summary>
@@ -23,7 +26,7 @@ namespace XUnitTest
         }
 
         /// <summary>
-        /// 
+        /// Demonstrates the behaviour of invalid parameters when used directly.
         /// </summary>
         /// <remarks>
         /// As it turns out, no validation is performed on direct use.
@@ -52,7 +55,7 @@ namespace XUnitTest
         }
 
         /// <summary>
-        /// 
+        /// Demonstrates the behaviour of invalid parameters when used directly.
         /// </summary>
         /// <remarks>
         /// As it turns out, no validation is performed on direct use.
