@@ -13,6 +13,7 @@ namespace Interfaces
     [Cmdlet(VerbsCommon.Get, "Hello", RemotingCapability = RemotingCapability.None)]
     public sealed class HelloCmdlet : Cmdlet, IHello
     {
+        // Intentionally no in-line documentation here.
         [Parameter(Mandatory = true, Position = 0, ValueFromPipeline = true)]
         public String Name { get; set; }
 

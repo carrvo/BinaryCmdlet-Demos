@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Interfaces
 {
     /// <summary>
-    /// <para type="synopsis">Determine whether Interface can define such that is acceptable to PowerShell.</para>
+    /// <para type="synopsis">Advanced Interface - Determine whether Interface can define such that is acceptable to PowerShell.</para>
     /// </summary>
     interface IAdvancedHello
     {

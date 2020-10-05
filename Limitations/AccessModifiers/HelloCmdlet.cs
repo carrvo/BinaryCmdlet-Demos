@@ -18,31 +18,37 @@ namespace AccessModifiers
         /// </summary>
         [Parameter(Mandatory = false, ValueFromPipeline = true, ParameterSetName = "Public")]
         public String PublicName { get; private set; }
+
         /// <summary>
         /// <para type="description">The name to say hello to.</para>
         /// </summary>
         [Parameter(Mandatory = false, ValueFromPipeline = true, ParameterSetName = "Private")]
         public String PrivateName { get; private set; }
+
         /// <summary>
         /// <para type="description">The name to say hello to.</para>
         /// </summary>
         [Parameter(Mandatory = false, ValueFromPipeline = true, ParameterSetName = "Protected")]
         public String ProtectedName { get; private set; }
+
         /// <summary>
         /// <para type="description">The name to say hello to.</para>
         /// </summary>
         [Parameter(Mandatory = false, ValueFromPipeline = true, ParameterSetName = "Internal")]
         public String InternalName { get; private set; }
+
         /// <summary>
         /// <para type="description">The name to say hello to.</para>
         /// </summary>
         [Parameter(Mandatory = false, ValueFromPipeline = true, ParameterSetName = "ProtectedInternal")]
         public String ProtectedInternalName { get; private set; }
+
         /// <summary>
         /// <para type="description">The name to say hello to.</para>
         /// </summary>
         [Parameter(Mandatory = false, ValueFromPipeline = true, ParameterSetName = "PrivateProtected")]
         public String PrivateProtectedName { get; private set; }
+
         /// <summary>
         /// <para type="description">The name to say hello to.</para>
         /// </summary>
@@ -51,6 +57,7 @@ namespace AccessModifiers
 
         protected override void ProcessRecord()
         {
+            // pick one
             var name = String.Join(String.Empty, new String[]
             {
                 PublicName,

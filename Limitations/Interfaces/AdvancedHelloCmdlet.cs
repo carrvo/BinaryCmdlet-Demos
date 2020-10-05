@@ -13,6 +13,7 @@ namespace Interfaces
     [Cmdlet(VerbsCommon.Get, "AdvancedHello", RemotingCapability = RemotingCapability.None)]
     public sealed class AdvancedHelloCmdlet : Cmdlet, IAdvancedHello
     {
+        // Intentionally no in-line documentation here.
         public String Name { get; set; }
 
         protected override void ProcessRecord()
