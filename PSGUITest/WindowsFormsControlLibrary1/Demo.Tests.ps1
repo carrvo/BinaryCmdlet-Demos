@@ -1,6 +1,6 @@
 ﻿Describe "Demo" {
 	BeforeAll {
-		Import-Module $PSScriptRoot\WindowsFormsControlLibrary1.dll
+		Import-Module $PSScriptRoot\PowerShellFormCmdlet.dll
 	}
 
 	It "can change colour with a complex function" {

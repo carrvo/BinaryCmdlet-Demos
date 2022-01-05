@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsControlLibrary1
+namespace PowerShellFormCmdlet
 {
     public partial class SquareForm : Form, ExternalConfig
     {

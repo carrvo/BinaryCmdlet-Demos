@@ -6,7 +6,7 @@ using System.Management.Automation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsControlLibrary1
+namespace PowerShellFormCmdlet
 {
     [Cmdlet(VerbsCommon.Get, "Color")]
     [OutputType(typeof(Color))]

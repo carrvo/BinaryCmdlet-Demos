@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsControlLibrary1;
+using PowerShellFormCmdlet;
 
-namespace WindowsFormsApp1
+namespace PowerShellGUI
 {
     static class Program
     {

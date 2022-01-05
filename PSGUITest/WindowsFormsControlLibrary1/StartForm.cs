@@ -5,7 +5,7 @@ using System.Management.Automation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsControlLibrary1
+namespace PowerShellFormCmdlet
 {
     [Cmdlet(VerbsLifecycle.Start, "Form")]
     public sealed class StartForm : Cmdlet

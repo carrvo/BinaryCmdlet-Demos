@@ -1,5 +1,5 @@
 ﻿
-namespace WindowsFormsControlLibrary1
+namespace PowerShellFormCmdlet
 {
     partial class SquareForm
     {
