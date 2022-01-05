@@ -12,7 +12,7 @@ namespace WindowsFormsControlLibrary1
 {
     public partial class SquareForm : Form, ExternalConfig
     {
-        internal static SquareForm SingleTon { get; private set; }
+        internal static SquareForm SingleTon { get; private set; } = new SquareForm();
 
         public SquareForm()
         {

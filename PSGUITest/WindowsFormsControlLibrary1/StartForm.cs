@@ -7,21 +7,13 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsControlLibrary1
 {
-    [Cmdlet(VerbsCommon.Get, "Config")]
-    [OutputType(typeof(ExternalConfig))]
-    public sealed class GetConfig : Cmdlet
+    [Cmdlet(VerbsLifecycle.Start, "Form")]
+    public sealed class StartForm : Cmdlet
     {
-        private ExternalConfig singleton;
-
         protected override void BeginProcessing()
         {
             var form = SquareForm.SingleTon;
-            singleton = (ExternalConfig)form;
-        }
-
-        protected override void EndProcessing()
-        {
-            WriteObject(singleton);
+            form.Show();
         }
     }
 }
