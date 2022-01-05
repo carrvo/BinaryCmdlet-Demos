@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerShellFormCmdlet", "WindowsFormsControlLibrary1\PowerShellFormCmdlet.csproj", "{5B873640-A714-4E9D-A2C6-6D28AFC046BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerShellFormCmdlet", "PowerShellFormCmdlet\PowerShellFormCmdlet.csproj", "{5B873640-A714-4E9D-A2C6-6D28AFC046BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerShellGUI", "WindowsFormsApp1\PowerShellGUI.csproj", "{13FCE702-52D6-484F-ACC6-FB8C7C03ED90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerShellGUI", "PowerShellGUI\PowerShellGUI.csproj", "{13FCE702-52D6-484F-ACC6-FB8C7C03ED90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

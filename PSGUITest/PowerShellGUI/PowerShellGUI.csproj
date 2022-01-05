@@ -72,7 +72,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WindowsFormsControlLibrary1\PowerShellFormCmdlet.csproj">
+    <ProjectReference Include="..\PowerShellFormCmdlet\PowerShellFormCmdlet.csproj">
       <Project>{5b873640-a714-4e9d-a2c6-6d28afc046ba}</Project>
       <Name>PowerShellFormCmdlet</Name>
     </ProjectReference>
