@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 namespace WindowsFormsControlLibrary1
 {
     [Cmdlet(VerbsCommon.Get, "Config")]
-    [OutputType(typeof(Interface1))]
-    public sealed class Class1 : Cmdlet
+    [OutputType(typeof(ExternalConfig))]
+    public sealed class GetConfig : Cmdlet
     {
-        private Interface1 singleton;
+        private ExternalConfig singleton;
 
         protected override void BeginProcessing()
         {
-            var form = Form1.SingleTon ?? new Form1();
+            var form = SquareForm.SingleTon ?? new SquareForm();
             form.Show();
-            singleton = (Interface1)form;
+            singleton = (ExternalConfig)form;
         }
 
         protected override void EndProcessing()

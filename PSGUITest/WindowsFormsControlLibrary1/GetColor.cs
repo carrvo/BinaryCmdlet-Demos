@@ -10,7 +10,7 @@ namespace WindowsFormsControlLibrary1
 {
     [Cmdlet(VerbsCommon.Get, "Color")]
     [OutputType(typeof(Color))]
-    public sealed class Class2 : Cmdlet
+    public sealed class GetColor : Cmdlet
     {
         [Parameter(Mandatory = true, ValueFromPipeline = true, ParameterSetName = "update")]
         public Color BaseColor { get; set; }

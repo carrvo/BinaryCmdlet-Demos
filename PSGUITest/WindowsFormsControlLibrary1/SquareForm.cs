@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsControlLibrary1
 {
-    public partial class Form1 : Form, Interface1
+    public partial class SquareForm : Form, ExternalConfig
     {
-        internal static Form1 SingleTon { get; private set; }
+        internal static SquareForm SingleTon { get; private set; }
 
-        public Form1()
+        public SquareForm()
         {
             InitializeComponent();
             SingleTon = this;

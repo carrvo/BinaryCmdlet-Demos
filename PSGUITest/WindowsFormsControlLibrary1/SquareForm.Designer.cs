@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsControlLibrary1
 {
-    partial class Form1
+    partial class SquareForm
     {
         /// <summary>
         /// Required designer variable.

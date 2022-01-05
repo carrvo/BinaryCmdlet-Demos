@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsControlLibrary1
 {
-    interface Interface1
+    interface ExternalConfig
     {
         Color BackColor { get; set; }
     }

@@ -42,21 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="GetConfig.cs" />
+    <Compile Include="GetColor.cs" />
+    <Compile Include="SquareForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SquareForm.Designer.cs">
+      <DependentUpon>SquareForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interface1.cs" />
+    <Compile Include="ExternalConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="SquareForm.resx">
+      <DependentUpon>SquareForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
