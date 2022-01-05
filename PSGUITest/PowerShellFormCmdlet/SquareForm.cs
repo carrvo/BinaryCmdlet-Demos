@@ -12,12 +12,11 @@ namespace PowerShellFormCmdlet
 {
     public partial class SquareForm : Form, IExternalConfig
     {
-        internal static SquareForm SingleTon { get; private set; } = new SquareForm();
+        public static SquareForm SingleTon { get; private set; } = new SquareForm();
 
-        public SquareForm()
+        private SquareForm()
         {
             InitializeComponent();
-            SingleTon = this;
         }
 
         private void Form1_BackColorChanged(object sender, EventArgs e)
