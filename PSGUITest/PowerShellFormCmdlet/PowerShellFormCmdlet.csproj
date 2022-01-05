@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="GetConfig.cs" />
     <Compile Include="GetColor.cs" />
     <Compile Include="SquareForm.cs">
@@ -50,7 +51,7 @@
     <Compile Include="SquareForm.Designer.cs">
       <DependentUpon>SquareForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExternalConfig.cs" />
+    <Compile Include="IExternalConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartForm.cs" />
     <Compile Include="StopForm.cs" />

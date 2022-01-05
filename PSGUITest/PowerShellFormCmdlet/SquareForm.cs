@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PowerShellFormCmdlet
 {
-    public partial class SquareForm : Form, ExternalConfig
+    public partial class SquareForm : Form, IExternalConfig
     {
         internal static SquareForm SingleTon { get; private set; } = new SquareForm();
 

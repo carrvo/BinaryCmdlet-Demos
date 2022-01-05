@@ -8,20 +8,19 @@ using System.Threading.Tasks;
 namespace PowerShellFormCmdlet
 {
     [Cmdlet(VerbsCommon.Get, "Config")]
-    [OutputType(typeof(ExternalConfig))]
+    [OutputType(typeof(IExternalConfig))]
     public sealed class GetConfig : Cmdlet
     {
-        private ExternalConfig singleton;
+        private IExternalConfig config;
 
         protected override void BeginProcessing()
         {
-            var form = SquareForm.SingleTon;
-            singleton = (ExternalConfig)form;
+            config = new Config(SquareForm.SingleTon);
         }
 
         protected override void EndProcessing()
         {
-            WriteObject(singleton);
+            WriteObject(config);
         }
     }
 }

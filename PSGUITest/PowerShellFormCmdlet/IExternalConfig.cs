@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PowerShellFormCmdlet
 {
-    interface ExternalConfig
+    interface IExternalConfig
     {
         Color BackColor { get; set; }
     }
