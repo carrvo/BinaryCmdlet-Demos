@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{2E603489-E368-4926-8914-76D03EC6CB99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{939A0C5B-0882-4D3C-A172-8D19BBB8CAF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component", "Component\Component.csproj", "{527B44FD-DBBD-4A47-80BF-A710FB79A633}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E603489-E368-4926-8914-76D03EC6CB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E603489-E368-4926-8914-76D03EC6CB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E603489-E368-4926-8914-76D03EC6CB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E603489-E368-4926-8914-76D03EC6CB99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939A0C5B-0882-4D3C-A172-8D19BBB8CAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939A0C5B-0882-4D3C-A172-8D19BBB8CAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939A0C5B-0882-4D3C-A172-8D19BBB8CAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939A0C5B-0882-4D3C-A172-8D19BBB8CAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{527B44FD-DBBD-4A47-80BF-A710FB79A633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527B44FD-DBBD-4A47-80BF-A710FB79A633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527B44FD-DBBD-4A47-80BF-A710FB79A633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527B44FD-DBBD-4A47-80BF-A710FB79A633}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34F9EF74-54D9-4D8A-9EF2-116DD727283D}
+	EndGlobalSection
+EndGlobal

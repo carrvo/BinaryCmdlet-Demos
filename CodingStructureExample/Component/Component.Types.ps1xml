@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Types>
+  <Type>
+    <Name>Example.Component.IData</Name>
+    <TypeConverter>
+      <TypeName>AutoAdapter.Adapt[Example.Component.IData]</TypeName>
+    </TypeConverter>
+  </Type>
+</Types>
