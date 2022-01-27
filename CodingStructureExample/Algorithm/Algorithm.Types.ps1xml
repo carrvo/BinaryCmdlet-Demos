@@ -9,12 +9,6 @@
           $this | Get-PlusOne | Write-Output
         </Script>
       </ScriptMethod>
-      <ScriptMethod>
-        <Name>PlusOneObject</Name>
-        <Script>
-          $this | Get-PlusOne | Write-Output
-        </Script>
-      </ScriptMethod>
     </Members>
   </Type>
 </Types>
