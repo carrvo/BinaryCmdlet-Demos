@@ -12,4 +12,19 @@
 		}
 		$config | Stop-Form
 	}
+
+	It "can move the button" {
+		$config = Start-Form
+		while (-Not $config.ReadClick) {
+			$config.ButtonXLocation = ($config.ButtonXLocation + 1) % 700
+			Start-Sleep -Milliseconds 50
+		}
+		while (-Not $config.ReadClick) {
+			$config.ButtonYLocation = ($config.ButtonYLocation + 1) % 350
+			Start-Sleep -Milliseconds 50
+		}
+		$config.ButtonText = "Exit."
+		while (-Not $config.ReadClick) {}
+		$config | Stop-Form
+	}
 }

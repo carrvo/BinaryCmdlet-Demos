@@ -29,15 +29,28 @@ namespace PowerShellFormCmdlet
         /// </summary>
         private void InitializeComponent()
         {
+            this.InteractiveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Form1
+            // InteractiveButton
+            // 
+            this.InteractiveButton.Location = new System.Drawing.Point(315, 197);
+            this.InteractiveButton.Name = "InteractiveButton";
+            this.InteractiveButton.Size = new System.Drawing.Size(75, 23);
+            this.InteractiveButton.TabIndex = 0;
+            this.InteractiveButton.Text = "Click Me!";
+            this.InteractiveButton.UseVisualStyleBackColor = true;
+            this.InteractiveButton.LocationChanged += new System.EventHandler(this.InteractiveButton_LocationChanged);
+            this.InteractiveButton.TextChanged += new System.EventHandler(this.InteractiveButton_TextChanged);
+            // 
+            // SquareForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
+            this.Controls.Add(this.InteractiveButton);
+            this.Name = "SquareForm";
             this.Text = "Form1";
             this.BackColorChanged += new System.EventHandler(this.Form1_BackColorChanged);
             this.ResumeLayout(false);
@@ -45,5 +58,7 @@ namespace PowerShellFormCmdlet
         }
 
         #endregion
+
+        private System.Windows.Forms.Button InteractiveButton;
     }
 }

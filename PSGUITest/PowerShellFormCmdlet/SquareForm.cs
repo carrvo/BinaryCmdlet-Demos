@@ -10,14 +10,26 @@ using System.Windows.Forms;
 
 namespace PowerShellFormCmdlet
 {
-    public partial class SquareForm : Form, IExternalConfig
+    public partial class SquareForm : Form
     {
+        public Button Interactive => InteractiveButton;
+
         internal SquareForm()
         {
             InitializeComponent();
         }
 
         private void Form1_BackColorChanged(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+
+        private void InteractiveButton_LocationChanged(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+
+        private void InteractiveButton_TextChanged(object sender, EventArgs e)
         {
             Refresh();
         }

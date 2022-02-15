@@ -10,5 +10,13 @@ namespace PowerShellFormCmdlet
     interface IExternalConfig
     {
         Color BackColor { get; set; }
+
+        Boolean ReadClick { get; }
+
+        Int32 ButtonXLocation { get; set; }
+
+        Int32 ButtonYLocation { get; set; }
+
+        String ButtonText { get; set; }
     }
 }
