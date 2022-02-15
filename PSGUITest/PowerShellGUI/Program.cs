@@ -17,7 +17,7 @@ namespace PowerShellGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(SquareForm.SingleTon);
+            Application.Run(new SquareForm());
         }
     }
 }

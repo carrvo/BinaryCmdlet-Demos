@@ -8,12 +8,20 @@ using System.Threading.Tasks;
 namespace PowerShellFormCmdlet
 {
     [Cmdlet(VerbsLifecycle.Start, "Form")]
+    [OutputType(typeof(IExternalConfig))]
     public sealed class StartForm : Cmdlet
     {
+        private Config config;
+
         protected override void BeginProcessing()
         {
-            var form = SquareForm.SingleTon;
-            form.Show();
+            config = new Config(new SquareForm());
+            config.Form.Show();
+        }
+
+        protected override void EndProcessing()
+        {
+            WriteObject(config);
         }
     }
 }

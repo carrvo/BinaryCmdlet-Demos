@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="GetConfig.cs" />
     <Compile Include="GetColor.cs" />
     <Compile Include="SquareForm.cs">
       <SubType>Form</SubType>

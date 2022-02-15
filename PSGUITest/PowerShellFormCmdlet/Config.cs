@@ -9,7 +9,7 @@ namespace PowerShellFormCmdlet
 {
     public class Config : IExternalConfig
     {
-        private IExternalConfig Form { get; }
+        internal SquareForm Form { get; }
 
         public Color BackColor { get => Form.BackColor; set => Form.BackColor = value; }
 

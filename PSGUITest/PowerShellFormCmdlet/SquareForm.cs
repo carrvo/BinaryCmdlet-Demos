@@ -12,9 +12,7 @@ namespace PowerShellFormCmdlet
 {
     public partial class SquareForm : Form, IExternalConfig
     {
-        public static SquareForm SingleTon { get; private set; } = new SquareForm();
-
-        private SquareForm()
+        internal SquareForm()
         {
             InitializeComponent();
         }

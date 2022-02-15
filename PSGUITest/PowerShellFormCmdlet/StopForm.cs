@@ -10,10 +10,12 @@ namespace PowerShellFormCmdlet
     [Cmdlet(VerbsLifecycle.Stop, "Form")]
     public sealed class StopForm : Cmdlet
     {
-        protected override void BeginProcessing()
+        [Parameter(Mandatory = true, ValueFromPipeline = true)]
+        public Config Config { get; set; }
+
+        protected override void ProcessRecord()
         {
-            var form = SquareForm.SingleTon;
-            form.Close();
+            Config.Form.Close();
         }
     }
 }
