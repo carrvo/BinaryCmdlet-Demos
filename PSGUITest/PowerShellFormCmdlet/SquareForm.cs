@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PowerShellFormCmdlet
 {
-    public partial class SquareForm : Form
+    internal partial class SquareForm : Form
     {
         public Button Interactive => InteractiveButton;
 

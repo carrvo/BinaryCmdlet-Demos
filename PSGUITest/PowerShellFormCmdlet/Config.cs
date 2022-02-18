@@ -34,7 +34,7 @@ namespace PowerShellFormCmdlet
 
         public String ButtonText { get => Form.Interactive.Text; set => Form.Interactive.Text = value; }
 
-        public Config(SquareForm form)
+        internal Config(SquareForm form)
         {
             Form = form;
             Form.Interactive.Click += Form_Click;
