@@ -21,7 +21,9 @@ namespace PowerShellFormCmdlet
             {
                 lock (clickedLock)
                 {
-                    return clicked;
+                    var old = clicked;
+                    clicked = false;
+                    return old;
                 }
             }
         }
