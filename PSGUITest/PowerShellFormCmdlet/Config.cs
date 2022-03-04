@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Management.Automation;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PowerShellFormCmdlet
 {
@@ -34,10 +36,21 @@ namespace PowerShellFormCmdlet
 
         public String ButtonText { get => Form.Interactive.Text; set => Form.Interactive.Text = value; }
 
+        public void ClickTheForm()
+        {
+            Form.Interactive.PerformClick();
+        }
+
         internal Config(SquareForm form)
         {
             Form = form;
             Form.Interactive.Click += Form_Click;
+            Form.Interactive.Click += Form_Click_Feedback;
+        }
+
+        private void Form_Click_Feedback(object sender, EventArgs e)
+        {
+            Form.Interactive.Text = "clicked";
         }
 
         private void Form_Click(object sender, EventArgs e)
