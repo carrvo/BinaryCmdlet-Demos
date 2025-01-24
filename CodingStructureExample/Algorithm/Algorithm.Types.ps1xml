@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Types>
+  <Type>
+    <Name>Example.Concrete.DTO</Name>
+    <Members>
+      <ScriptMethod>
+        <Name>PlusOne</Name>
+        <Script>
+          $this | Get-PlusOne | Write-Output
+        </Script>
+      </ScriptMethod>
+    </Members>
+  </Type>
+</Types>
